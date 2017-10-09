@@ -11,15 +11,13 @@
     </header>
     <div class="contents">
       <h2>投稿する</h2>
-      <form class="clearfix">
+      <%= form_tag('created', method: :post) do %>
         <img src="images/cat1.png">
-        <div class="input-box">
-          <textarea rows="4" cols="40">今日も疲れたにゃー</textarea>
-        </div>
+        <textarea cols="30" name="text" rows="4"></textarea>
         <div class="button-box">
           <input type="submit" class="submit-button">
         </div>
-      </form>
+      <% end %>
     </div>
   </body>
 </html>
